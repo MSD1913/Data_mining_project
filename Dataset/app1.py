@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 # Streamlit App Title
-st.title("Interactive Data Exploration and Cleaning")
+st.title("Hello, Here is your Data Analyzer :)")
 
 # Sidebar Navigation
 st.sidebar.title("Navigation")
@@ -91,10 +91,6 @@ if section == "Visualizations":
     if st.session_state["df"] is not None:
         st.header("Data Visualizations")
         df = st.session_state["df"]
-
-        # Correlation Heatmap (placeholder)
-        if st.checkbox("Show Correlation Heatmap"):
-            st.write("This feature is under development!")
 
         # Histogram
         if st.checkbox("Show Histogram"):
